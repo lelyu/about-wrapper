@@ -11,6 +11,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
+  base: '/about-wrapper/',
   server: {
     host: '0.0.0.0',
     port: 5173, // Ensure this is the correct port

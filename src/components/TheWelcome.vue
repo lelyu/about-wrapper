@@ -3,6 +3,7 @@ import WelcomeItem from './WelcomeItem.vue'
 import SchoolIcon from './icons/IconSchool.vue'
 import LinkedInIcon from './icons/IconLinkedIn.vue'
 import SupportIcon from './icons/IconSupport.vue'
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>
@@ -29,7 +30,7 @@ import SupportIcon from './icons/IconSupport.vue'
     <template #icon>
       <SupportIcon />
     </template>
-    <template #heading>Contact</template
-    ><a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">Send me an email</a>
+    <template #heading>Contact</template>
+    <RouterLink rel="noopener" to="/sendEmail">Send me an email</RouterLink>
   </WelcomeItem>
 </template>

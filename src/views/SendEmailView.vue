@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import emailjs from 'emailjs-com'
 
+const email = ref('')
 const form = ref(null)
 const reCaptchaSiteKey = '6LdJbBMqAAAAADQdzuxd6NktdKhqlYRpOF-XGOrG'
 
@@ -19,8 +20,14 @@ const loadReCaptchaScript = () => {
   })
 }
 
+const isValidEmailFormat = (email) => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  return emailRegex.test(email)
+}
+
 const sendEmail = async () => {
   try {
+    // verify human
     await loadReCaptchaScript()
     window.grecaptcha.ready(async () => {
       const token = await window.grecaptcha.execute(reCaptchaSiteKey, { action: 'submit' })
@@ -29,6 +36,8 @@ const sendEmail = async () => {
       hiddenInput.name = 'g-recaptcha-response'
       hiddenInput.value = token
       form.value.appendChild(hiddenInput)
+      // verify email format
+      isValidEmailFormat(email.value)
 
       emailjs
         .sendForm(

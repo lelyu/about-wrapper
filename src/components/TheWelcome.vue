@@ -31,6 +31,6 @@ import { RouterLink } from 'vue-router'
       <SupportIcon />
     </template>
     <template #heading>Contact</template>
-    <RouterLink rel="noopener" to="/sendEmail">Send me an email</RouterLink>
+    <RouterLink to="/sendEmail">Send me an email</RouterLink>
   </WelcomeItem>
 </template>

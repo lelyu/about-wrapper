@@ -1,22 +1,12 @@
 <template>
   <div class="about">
-    <h2>About Me</h2>
-    I graduated from Boston College in May 2024. I currently make websites for small local
-    businesses in Massachusetts as an independent developer.
-    <h2>Current Tech Stack</h2>
+    <p>Le Lyu is a code-slinging aficionado who can teach Python to kids, troubleshoot Java in his sleep, and write enough JavaScript to break the internet—and maybe even your browser's heart (`undefined is not a function`, anyone?). From building a healthy lifestyle app that convinces college students to take a few steps (while JavaScript promises not to trip over its own promises) to teaching STEM to kids, Le brings creativity and humor to every project. With a GPA that proves he’s no `NaN`, he’s here to make sure that—unlike JavaScript—his work always has a clear definition.</p>
+    <br><br>
+    <h2>Things I do</h2>
     <ul>
-      <li>MongoDB, Vue, Node, Express</li>
-    </ul>
-    <h2>Top Skills</h2>
-    <ul>
-      <li>Programming: Python, JavaScript, Java</li>
-      <li>Framework: React</li>
-    </ul>
-    <h2>Working Skills</h2>
-    <ul>
-      <li>Programming: MySQL, C, CSS, HTML</li>
-      <li>Framework: Django, D3, BootStrap, Spring</li>
-      <li>Tools: Firebase, Heroku, Tableau, Figma, Git, Postman</li>
+      <li>Programming with Python and JavaScript</li>
+      <li>Teaching STEM to kids</li>
+      <li>Building web apps</li>
     </ul>
   </div>
 </template>
@@ -29,4 +19,7 @@
     align-items: center;
   }
 } */
+p {
+  text-indent: 2rem;
+}
 </style>

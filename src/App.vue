@@ -16,7 +16,7 @@
           working at the
           <a href="https://cpii.hk/" target="_blank" class="link"
             >Centre for Perceptual and Interactive Intelligence (CPII)</a
-          >
+          >.
         </p>
 
         <p>
